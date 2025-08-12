@@ -10,19 +10,19 @@ driver = webdriver.Chrome()
 
 try:
     print("🌐 Abriendo página de login...")
-    driver.get("https://plantillas-drea.regionayacucho.gob.pe/login")
+    driver.get("<<URL DE LA PAGINA>>")
 
     wait = WebDriverWait(driver, 10)
 
     # Esperar campo de usuario
     print("⏳ Esperando campo 'username'...")
     usuario_input = wait.until(EC.visibility_of_element_located((By.NAME, "username")))
-    usuario_input.send_keys("admin")
+    usuario_input.send_keys("USUARIO")
 
     # Esperar campo de contraseña
     print("⏳ Esperando campo 'password'...")
     password_input = wait.until(EC.visibility_of_element_located((By.NAME, "password")))
-    password_input.send_keys('Admin2018')  # ← aquí pon la real
+    password_input.send_keys('**********')  # ← aquí pon la real
 
     # Clic en el botón de login (puede necesitar ajuste si el botón es dinámico)
     print("➡️ Haciendo clic en el botón de login...")
