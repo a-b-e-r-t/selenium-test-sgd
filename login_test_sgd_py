@@ -10,13 +10,13 @@ driver = webdriver.Chrome()
 try:
     # Abrir la URL del sistema
     print("🌐 Abriendo página de login...")
-    driver.get("http://172.16.5.4/sgd/login.do")
+    driver.get("<<URL DE LA PAGINA>>")
     time.sleep(2)  # Esperar que cargue la página
 
     # Completar los campos del formulario de login
     print("✏️ Ingresando usuario y contraseña...")
-    driver.find_element(By.ID, "coUsuario").send_keys("admin")
-    driver.find_element(By.ID, "dePass").send_keys("1234")
+    driver.find_element(By.ID, "coUsuario").send_keys("USUARIO")
+    driver.find_element(By.ID, "dePass").send_keys("**********")
 
     # Hacer clic en el botón de ingreso
     print("➡️ Haciendo clic en el botón de login...")
