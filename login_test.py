@@ -1,6 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support.ui import WeDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 import time
@@ -27,7 +27,7 @@ try:
     # Clic en el botón de login (puede necesitar ajuste si el botón es dinámico)
     print("➡️ Haciendo clic en el botón de login...")
     boton_login = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@type='submit']")))
-    boton_login.click()
+    boton_login
 
     # Esperar respuesta
     print("🔍 Verificando si el login fue exitoso...")
